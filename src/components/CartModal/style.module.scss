@@ -30,7 +30,6 @@
     align-items: center;
     padding: 16px;
     width: 100%;
-    // border: 1px solid red;
     height: 57px;
     flex-shrink: 0;
     border-radius: 8px 8px 0px 0px;
@@ -43,11 +42,9 @@
     border: none;
     flex-shrink: 0;
     color: #FFFFFF80;
-    // border: 1px solid black;
 }
 
 .modalMain {
-    // border: 1px solid black;
     width: 100%;
     height: 100%;
     flex-shrink: 0;
@@ -58,7 +55,6 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    // border: 1px solid black;
     gap: 1rem;
 }
 
@@ -66,7 +62,6 @@
     width: 95%;
     height: auto;
     gap: 2rem;
-    // border: 1px solid black;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -76,7 +71,6 @@
 .totalSum {
     width: 100%;
     display: flex;
-    // border: 1px solid blue;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -108,11 +102,9 @@
         .modalBox {
             position: relative;
             width: 100%;
-            // max-width: 484px;
             background: var(--color-white);
             border-radius: 8px;
             height: auto;
         }
     }
-
 }
