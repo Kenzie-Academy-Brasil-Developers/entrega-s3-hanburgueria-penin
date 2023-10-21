@@ -1,21 +1,21 @@
-import { MdClose } from "react-icons/md";
-import { CartItemCard } from "./CartItemCard";
+import { MdClose } from "react-icons/md"
+import { CartItemCard } from "./CartItemCard"
 import styles from "./style.module.scss"
-import { useOutclick } from "../../hooks/useOutclick";
-import { useKeydown } from "../../hooks/useKeydown";
+import { useOutclick } from "../../hooks/useOutclick"
+import { useKeydown } from "../../hooks/useKeydown"
 
 export const CartModal = ({setCartList, setIsOpen, removeCart, cartList }) => {
    const total = cartList.reduce((prevValue, product) => {
-      return prevValue + product.price;
-   }, 0);
+      return prevValue + product.price
+   }, 0)
 
    const modalRef = useOutclick(() => {
-      setIsOpen(false);
-   });
+      setIsOpen(false)
+   })
 
    const buttonRef = useKeydown("Escape", (element) => {
-      element.click();
-   });
+      element.click()
+   })
 
    return (
       <div className={styles.modalOverlay} role="dialog">
@@ -43,5 +43,5 @@ export const CartModal = ({setCartList, setIsOpen, removeCart, cartList }) => {
             </div>
          </div>
       </div>
-   );
-};
+   )
+}

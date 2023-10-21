@@ -1,7 +1,7 @@
-import Logo from "../../assets/Logo.svg";
-import { MdShoppingCart } from "react-icons/md";
+import Logo from "../../assets/Logo.svg"
+import { MdShoppingCart } from "react-icons/md"
 import styles from "./style.module.scss"
-import { CartModal } from "../CartModal";
+import { CartModal } from "../CartModal"
 
 
 
@@ -15,5 +15,5 @@ export const Header = ({cartList, setIsOpen}) => {
             <span className={styles.count}>{cartList.length}</span>
          </button>
       </header>
-   );
-};
+   )
+}

@@ -1,5 +1,5 @@
-import { ProductCard } from "./ProductCard";
-import styles from "./style.module.scss";
+import { ProductCard } from "./ProductCard"
+import styles from "./style.module.scss"
 
 export const ProductList = ({addCart, productList }) => {
    return (
@@ -8,5 +8,5 @@ export const ProductList = ({addCart, productList }) => {
             <ProductCard key={product.id} product={product} addCart={addCart}/>
          ))}
       </ul>
-   );
-};
+   )
+}

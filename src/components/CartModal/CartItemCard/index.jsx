@@ -1,8 +1,8 @@
-import { MdDelete } from "react-icons/md";
+import { MdDelete } from "react-icons/md"
 import styles from "./style.module.scss"
 
 export const CartItemCard = ({ removeCart, product }) => {
-   // console.log(product)
+   
    return (
       <li className={styles.listProducts}>
          <div className={styles.divProduct}>
@@ -16,5 +16,5 @@ export const CartItemCard = ({ removeCart, product }) => {
             <MdDelete size={21} />
          </button>
       </li>
-   );
-};
+   )
+}

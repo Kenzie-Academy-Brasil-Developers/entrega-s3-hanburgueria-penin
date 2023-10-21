@@ -1,16 +1,16 @@
-import { useEffect, useState } from "react";
-import { CartModal } from "./components/CartModal";
+import { useEffect, useState } from "react"
+import { CartModal } from "./components/CartModal"
 import { HomePage } from "./pages/HomePage"
 import "./styles/index.scss"
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
  
-  const localStorageProducts = localStorage.getItem("@ProdutosHamburgueria");
+  const localStorageProducts = localStorage.getItem("@ProdutosHamburgueria")
  
   const [cartList, setCartList] = useState(
-    localStorageProducts ? JSON.parse(localStorageProducts) : []);
+    localStorageProducts ? JSON.parse(localStorageProducts) : [])
  
   const addCart = (name, price, category, img, id) => {
     const hasCart = cartList.some((cart) => cart.id === id)
@@ -40,7 +40,7 @@ function App() {
     localStorage.setItem("@ProdutosHamburgueria", JSON.stringify(cartList))
   }, [cartList])
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <>

@@ -6,16 +6,16 @@ export const useKeydown = (keyId, callback) => {
    useEffect(() => {
     const handleKeydown = (event) => {
         if(event.key === keyId){
-            if (callback) callback(ref.current);
+            if (callback) callback(ref.current)
         }
     }
 
-    window.addEventListener("keydown", handleKeydown);
+    window.addEventListener("keydown", handleKeydown)
 
     return () => {
-        window.removeEventListener("keydown", handleKeydown);
+        window.removeEventListener("keydown", handleKeydown)
     }
    }, [])
 
-   return ref;
+   return ref
 }
